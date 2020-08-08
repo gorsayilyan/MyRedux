@@ -1,0 +1,2 @@
+# MyRedux
+just learning Redux
