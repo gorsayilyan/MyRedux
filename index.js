@@ -1,19 +1,6 @@
-export const increment = (num) =>{
-    return {
-        type: "INCREMENT",
-        payload1: num
-    };
-};
+import { combineReducers } from "redux";
+import searchReducer from "./searchReducer";
 
-export const decrement = (num) =>{
-    return {
-        type: "DECREMENT",
-        payload2: num
-    };
-};
-
-export const signin = () =>{
-    return {
-        type: "SIGNIN",
-    };
-};
+export default combineReducers({
+    movies: searchReducer
+});
